@@ -14,9 +14,8 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uz3-aO-CTt" userLabel="Header View">
-                    <rect key="frame" x="0.0" y="-4" width="414" height="250"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uz3-aO-CTt" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="alura viagens" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Xxm-DV-9Pt">
                             <rect key="frame" x="8" y="52" width="144" height="33"/>
@@ -48,6 +47,12 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="uz3-aO-CTt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1A1-bV-vAI"/>
+                <constraint firstItem="uz3-aO-CTt" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="IUb-vw-6AQ"/>
+                <constraint firstItem="uz3-aO-CTt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UDo-L1-FoS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="uz3-aO-CTt" secondAttribute="bottom" constant="50" id="ZIb-vY-lti"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="BannerImageView" destination="ENt-C7-UiF" id="QJ6-pJ-aDa"/>
