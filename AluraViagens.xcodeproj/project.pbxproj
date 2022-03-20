@@ -41,6 +41,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6135B78227E78AD90083F30E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				61691A4527E61E5B00F421A8 /* AppDelegate.swift */,
+				61691A4727E61E5B00F421A8 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		6135B78327E78B100083F30E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6135B78427E78B3B0083F30E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6135B78627E78B890083F30E /* Header */,
+				61691A4927E61E5B00F421A8 /* ViewController.swift */,
+				61691A4B27E61E5B00F421A8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6135B78527E78B500083F30E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6135B78627E78B890083F30E /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				61691A5B27E6536C00F421A8 /* HomeTableViewHeader.swift */,
+				61691A5927E628E200F421A8 /* HomeTableViewHeader.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		61691A3927E61E5B00F421A8 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +102,13 @@
 		61691A4427E61E5B00F421A8 /* AluraViagens */ = {
 			isa = PBXGroup;
 			children = (
-				61691A4527E61E5B00F421A8 /* AppDelegate.swift */,
-				61691A5B27E6536C00F421A8 /* HomeTableViewHeader.swift */,
-				61691A4727E61E5B00F421A8 /* SceneDelegate.swift */,
-				61691A4927E61E5B00F421A8 /* ViewController.swift */,
-				61691A4B27E61E5B00F421A8 /* Main.storyboard */,
+				6135B78227E78AD90083F30E /* AppDelegate */,
+				6135B78327E78B100083F30E /* Model */,
+				6135B78427E78B3B0083F30E /* View */,
+				6135B78527E78B500083F30E /* ViewModel */,
 				61691A4E27E61E6000F421A8 /* Assets.xcassets */,
 				61691A5027E61E6000F421A8 /* LaunchScreen.storyboard */,
 				61691A5327E61E6000F421A8 /* Info.plist */,
-				61691A5927E628E200F421A8 /* HomeTableViewHeader.xib */,
 			);
 			path = AluraViagens;
 			sourceTree = "<group>";
