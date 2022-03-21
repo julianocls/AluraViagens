@@ -38,8 +38,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Diárias - 1 Pessoa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9V-as-FwC">
-                                <rect key="frame" x="10" y="264.5" width="280" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3 Diárias - 1 Pessoa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9V-as-FwC">
+                                <rect key="frame" x="10" y="263.5" width="280" height="23"/>
                                 <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -116,6 +116,16 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="backgroundViewCell" destination="oVQ-Ud-Pc8" id="lUM-hU-3cx"/>
+                <outlet property="diariaViagemLabel" destination="L9V-as-FwC" id="xcR-Fr-z1U"/>
+                <outlet property="precoSemDescontoLabel" destination="WK0-s4-5xt" id="Byd-r4-Bby"/>
+                <outlet property="precoViagemLabel" destination="2b3-ah-nU5" id="IqT-Xf-cIs"/>
+                <outlet property="statusCancelamentoViagemLabel" destination="tiF-ZL-xNT" id="QmA-5c-MDB"/>
+                <outlet property="subtituloViagemLabel" destination="fuP-RB-Obd" id="Iaj-Z9-ack"/>
+                <outlet property="tituloViagemLabel" destination="UhV-r1-p67" id="CpJ-I1-eGi"/>
+                <outlet property="viagemImage" destination="gwo-u3-kqt" id="LWc-uE-vcl"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
         </tableViewCell>
     </objects>
