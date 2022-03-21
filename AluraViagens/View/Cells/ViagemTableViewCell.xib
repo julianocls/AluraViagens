@@ -38,7 +38,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3 Diárias - 1 Pessoa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9V-as-FwC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Diárias - 1 Pessoa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L9V-as-FwC">
                                 <rect key="frame" x="10" y="263.5" width="280" height="23"/>
                                 <fontDescription key="fontDescription" name="KohinoorTelugu-Regular" family="Kohinoor Telugu" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -86,7 +86,7 @@
                             <constraint firstItem="TkY-CE-h3p" firstAttribute="centerY" secondItem="2b3-ah-nU5" secondAttribute="centerY" id="BXu-jw-9xl"/>
                             <constraint firstItem="fuP-RB-Obd" firstAttribute="top" secondItem="UhV-r1-p67" secondAttribute="bottom" constant="15" id="Cje-RD-kbx"/>
                             <constraint firstAttribute="trailing" secondItem="UhV-r1-p67" secondAttribute="trailing" constant="10" id="DNv-8c-AyP"/>
-                            <constraint firstItem="L9V-as-FwC" firstAttribute="top" secondItem="fuP-RB-Obd" secondAttribute="bottom" constant="15" id="Jth-bi-GoC"/>
+                            <constraint firstItem="L9V-as-FwC" firstAttribute="top" secondItem="fuP-RB-Obd" secondAttribute="bottom" constant="14" id="Jth-bi-GoC"/>
                             <constraint firstItem="fSB-Vh-2gb" firstAttribute="leading" secondItem="oVQ-Ud-Pc8" secondAttribute="leading" constant="10" id="NR1-1M-iAl"/>
                             <constraint firstItem="WK0-s4-5xt" firstAttribute="leading" secondItem="fSB-Vh-2gb" secondAttribute="trailing" constant="7.5" id="RXf-jM-9Tk"/>
                             <constraint firstItem="2b3-ah-nU5" firstAttribute="top" secondItem="fSB-Vh-2gb" secondAttribute="bottom" constant="15" id="VMR-qu-tim"/>
@@ -98,7 +98,7 @@
                             <constraint firstAttribute="trailing" secondItem="gwo-u3-kqt" secondAttribute="trailing" id="iff-up-lbB"/>
                             <constraint firstItem="fuP-RB-Obd" firstAttribute="leading" secondItem="oVQ-Ud-Pc8" secondAttribute="leading" constant="10" id="lSh-BN-3jt"/>
                             <constraint firstItem="gwo-u3-kqt" firstAttribute="top" secondItem="oVQ-Ud-Pc8" secondAttribute="top" id="lbc-Gt-Eew"/>
-                            <constraint firstItem="fSB-Vh-2gb" firstAttribute="top" secondItem="L9V-as-FwC" secondAttribute="bottom" constant="15" id="oHC-nO-4JX"/>
+                            <constraint firstItem="fSB-Vh-2gb" firstAttribute="top" secondItem="L9V-as-FwC" secondAttribute="bottom" constant="16" id="oHC-nO-4JX"/>
                             <constraint firstItem="TkY-CE-h3p" firstAttribute="leading" secondItem="2b3-ah-nU5" secondAttribute="trailing" constant="8" symbolic="YES" id="vOk-UT-MBP"/>
                             <constraint firstItem="WK0-s4-5xt" firstAttribute="centerY" secondItem="fSB-Vh-2gb" secondAttribute="centerY" id="wAs-ch-DkQ"/>
                         </constraints>
@@ -110,7 +110,7 @@
                     <constraint firstAttribute="trailing" secondItem="fuP-RB-Obd" secondAttribute="trailing" constant="20" id="LnY-xi-r7P"/>
                     <constraint firstItem="oVQ-Ud-Pc8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="XKs-91-DwX"/>
                     <constraint firstAttribute="bottom" secondItem="oVQ-Ud-Pc8" secondAttribute="bottom" constant="10" id="gtr-Uq-mpA"/>
-                    <constraint firstItem="L9V-as-FwC" firstAttribute="top" secondItem="fuP-RB-Obd" secondAttribute="bottom" constant="15" id="o8U-R9-UbX"/>
+                    <constraint firstItem="L9V-as-FwC" firstAttribute="top" secondItem="fuP-RB-Obd" secondAttribute="bottom" constant="14" id="o8U-R9-UbX"/>
                     <constraint firstAttribute="trailing" secondItem="oVQ-Ud-Pc8" secondAttribute="trailing" constant="10" id="vXl-Zc-oqg"/>
                     <constraint firstItem="fuP-RB-Obd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="xxf-Su-Nfh"/>
                 </constraints>
@@ -126,7 +126,7 @@
                 <outlet property="tituloViagemLabel" destination="UhV-r1-p67" id="CpJ-I1-eGi"/>
                 <outlet property="viagemImage" destination="gwo-u3-kqt" id="LWc-uE-vcl"/>
             </connections>
-            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+            <point key="canvasLocation" x="-61" y="109"/>
         </tableViewCell>
     </objects>
     <resources>
