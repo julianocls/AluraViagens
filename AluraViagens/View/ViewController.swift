@@ -33,7 +33,16 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let celulaViagem = tableView.dequeueReusableCell(withIdentifier: "ViagemTableViewCell") as? ViagemTableViewCell else { fatalError("Error to create ViagemTableViewCell") }
-        return celulaViagem
+        
+        let viewModel = sessaoDeViagens?[indexPath.section]
+        
+        switch viewModel?.tipo {
+        case .destaques:
+            celulaViagem.configuraCelula(viewModel?.viagens[indexPath.row])
+            return celulaViagem
+        default:
+            return UITableViewCell()
+        }        
     }
     
 }
