@@ -9,15 +9,13 @@ import UIKit
 
 class OfertaTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    // MARK: -- IBOutlets
+    @IBOutlet var viagemImages: [UIImageView]!
+    @IBOutlet var tituloViagemLabels: [UILabel]!
+    @IBOutlet var subtituloViagemLabels: [UILabel]!
+    @IBOutlet var precoSemDescontoLabels: [UILabel]!
+    @IBOutlet var precoLabels: [UILabel]!
+    
+    
     
 }
