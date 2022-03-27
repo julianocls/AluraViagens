@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,14 +16,63 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBlueColor"/>
-            <point key="canvasLocation" x="132" y="100"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="ORG-s3-VsE">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQJ-8l-sma" userLabel="Imagem Viagem View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="235"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TWm-mn-e37">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="235"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="TWm-mn-e37" secondAttribute="trailing" id="Cky-EL-Bzu"/>
+                                <constraint firstItem="TWm-mn-e37" firstAttribute="top" secondItem="QQJ-8l-sma" secondAttribute="top" id="ddE-lA-YgF"/>
+                                <constraint firstAttribute="bottom" secondItem="TWm-mn-e37" secondAttribute="bottom" id="fZy-W2-mrN"/>
+                                <constraint firstItem="TWm-mn-e37" firstAttribute="leading" secondItem="QQJ-8l-sma" secondAttribute="leading" id="g0c-vo-lAd"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tsS-po-KjE">
+                            <rect key="frame" x="16" y="235" width="382" height="59"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pacote de Viagem para Cancun All Inclusive" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trm-t6-emc">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="59"/>
+                                    <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="21"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="tsS-po-KjE" secondAttribute="bottom" id="FPF-Qy-kPP"/>
+                        <constraint firstAttribute="trailing" secondItem="tsS-po-KjE" secondAttribute="trailing" constant="16" id="L0k-p1-a1Y"/>
+                        <constraint firstItem="QQJ-8l-sma" firstAttribute="top" secondItem="ORG-s3-VsE" secondAttribute="top" id="MRR-m9-gxF"/>
+                        <constraint firstItem="tsS-po-KjE" firstAttribute="top" secondItem="QQJ-8l-sma" secondAttribute="bottom" id="U6f-Dc-ayb"/>
+                        <constraint firstItem="QQJ-8l-sma" firstAttribute="width" secondItem="ORG-s3-VsE" secondAttribute="width" id="URO-fM-uZC"/>
+                        <constraint firstItem="QQJ-8l-sma" firstAttribute="height" secondItem="ORG-s3-VsE" secondAttribute="height" multiplier="0.262277" id="dWd-q8-ziN"/>
+                        <constraint firstItem="QQJ-8l-sma" firstAttribute="leading" secondItem="ORG-s3-VsE" secondAttribute="leading" id="joC-s5-gu9"/>
+                        <constraint firstItem="tsS-po-KjE" firstAttribute="leading" secondItem="ORG-s3-VsE" secondAttribute="leading" constant="16" id="vUd-qb-wUq"/>
+                        <constraint firstAttribute="trailing" secondItem="QQJ-8l-sma" secondAttribute="trailing" id="zrP-tj-leF"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ORG-s3-VsE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NUd-Xt-nwA"/>
+                <constraint firstAttribute="trailing" secondItem="ORG-s3-VsE" secondAttribute="trailing" id="P61-9v-qQZ"/>
+                <constraint firstItem="ORG-s3-VsE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SLg-Ug-DUS"/>
+                <constraint firstAttribute="bottom" secondItem="ORG-s3-VsE" secondAttribute="bottom" id="cFv-Yj-8yv"/>
+            </constraints>
+            <point key="canvasLocation" x="-446.37681159420293" y="55.580357142857139"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
