@@ -25,13 +25,30 @@ class ViewController: UIViewController {
         viagensTableView.delegate = self
     }
     
+    func irParaDesaques(_ viagem: Viagem?) {
+        if let viagemSelecionada = viagem {
+            let detalheController = DetalheViewController.instanciar(viagemSelecionada)
+            navigationController?.pushViewController(detalheController, animated: true)
+        }
+    }
+    
 }
 
 extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detalheController = DetalheViewController(nibName: "DetalheViewController", bundle: nil)
-        navigationController?.pushViewController(detalheController, animated: true)
+        
+        let viewModel = sessaoDeViagens?[indexPath.section]
+        switch viewModel?.tipo {
+        case .destaques, .internacionais:
+            let viagemSelecionada = viewModel?.viagens[indexPath.row]
+            
+            irParaDesaques(viagemSelecionada)
+        default:
+            break
+        }
+        
+        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
