@@ -7,8 +7,8 @@
                 "asset": "natal-brasil",
                 "diaria": 7,
                 "hospedes": 1,
-                "precoSemDesconto": 1.284,
-                "preco": 899,
+                "precoSemDesconto": 1284.00,
+                "preco": 899.00,
                 "cancelamento": "Cancelamento Grátis!"
             },
             {
@@ -18,8 +18,8 @@
                 "asset": "bonito-brasil",
                 "diaria": 5,
                 "hospedes": 2,
-                "precoSemDesconto": 1.048,
-                "preco": 734,
+                "precoSemDesconto": 1048.00,
+                "preco": 734.00,
                 "cancelamento": "Cancelamento Grátis!"
             },
             {
@@ -29,8 +29,8 @@
                 "asset": "porto-galinhas-brasil",
                 "diaria": 5,
                 "hospedes": 1,
-                "precoSemDesconto": 1.078,
-                "preco": 809,
+                "precoSemDesconto": 1078.00,
+                "preco": 809.00,
                 "cancelamento": "Cancelamento Grátis!"
             }
         ],
@@ -41,8 +41,8 @@
                 "asset": "beto-carrero-brasil",
                 "diaria": 5,
                 "hospedes": 1,
-                "precoSemDesconto": 2.898,
-                "preco": 1449,
+                "precoSemDesconto": 2898.00,
+                "preco": 1449.00,
                 "cancelamento": "Cancelamento Grátis!"
             },
             {
@@ -52,8 +52,8 @@
                 "asset": "sao-luis-brasil",
                 "diaria": 5,
                 "hospedes": 1,
-                "precoSemDesconto": 1.078,
-                "preco": 809,
+                "precoSemDesconto": 1078.00,
+                "preco": 809.00,
                 "cancelamento": "Cancelamento Grátis!"
             }
         ],
@@ -64,8 +64,8 @@
                 "asset": "cancun-internacional",
                 "diaria": 5,
                 "hospedes": 1,
-                "precoSemDesconto": 5.816,
-                "preco": 3.199,
+                "precoSemDesconto": 5816.00,
+                "preco": 3199.00,
                 "cancelamento": "Cancelamento Grátis!"
             },
             {
@@ -75,8 +75,8 @@
                 "asset": "santiago-internacional",
                 "diaria": 3,
                 "hospedes": 1,
-                "precoSemDesconto": 1.895,
-                "preco": 1.327,
+                "precoSemDesconto": 1895.00,
+                "preco": 1327.00,
                 "cancelamento": "Cancelamento Grátis!"
             }
         ]

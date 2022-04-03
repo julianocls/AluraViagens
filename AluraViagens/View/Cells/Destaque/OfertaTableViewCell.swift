@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol OfertaTableViewCellDelegate: AnyObject {
+    func didSelectView(_ viagem: Viagem?)
+}
+
 class OfertaTableViewCell: UITableViewCell {
 
     // MARK: -- IBOutlets
@@ -17,6 +21,7 @@ class OfertaTableViewCell: UITableViewCell {
     @IBOutlet var precoLabels: [UILabel]!
     @IBOutlet var fundoViews: [UIView]!
     
+    weak var delegate: OfertaTableViewCellDelegate?
     private var viagens: [Viagem]?
     
     func configuraCelula(_ viagens: [Viagem]?) {
@@ -56,7 +61,7 @@ class OfertaTableViewCell: UITableViewCell {
         if let selectedView = gesture.view {
             let viagemSelecionada = viagens?[selectedView.tag]
             
-            print(viagemSelecionada?.titulo)
+            delegate?.didSelectView(viagemSelecionada)
         }
     }
     

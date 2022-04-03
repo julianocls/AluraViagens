@@ -9,6 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalheViewController" customModule="AluraViagens" customModuleProvider="target">
             <connections>
+                <outlet property="diariaViagemLabel" destination="Hfr-xM-g39" id="aPu-tw-5RP"/>
+                <outlet property="percentualDescontoLabel" destination="nRm-yT-tbv" id="H2V-Pn-gnG"/>
+                <outlet property="precoSemDescontoLabel" destination="O2O-mf-djY" id="y7e-xE-RmV"/>
+                <outlet property="precoViagemLabel" destination="HfH-jj-E02" id="P2S-ip-Dbh"/>
                 <outlet property="subtituloViagemLabel" destination="4cL-5g-jLp" id="mcp-cm-Ap4"/>
                 <outlet property="tituloViagemLabel" destination="Trm-t6-emc" id="Cqx-9y-St4"/>
                 <outlet property="viagemImage" destination="TWm-mn-e37" id="nUb-hH-vbp"/>
@@ -360,7 +364,7 @@
                 <constraint firstItem="9ee-yI-yPc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YMf-06-WQC"/>
                 <constraint firstAttribute="bottom" secondItem="ORG-s3-VsE" secondAttribute="bottom" constant="80" id="cFv-Yj-8yv"/>
             </constraints>
-            <point key="canvasLocation" x="-23.188405797101453" y="-37.5"/>
+            <point key="canvasLocation" x="-314" y="-42"/>
         </view>
     </objects>
     <resources>

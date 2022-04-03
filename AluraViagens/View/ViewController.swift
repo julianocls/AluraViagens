@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         viagensTableView.delegate = self
     }
     
-    func irParaDesaques(_ viagem: Viagem?) {
+    func irParaDetalhes(_ viagem: Viagem?) {
         if let viagemSelecionada = viagem {
             let detalheController = DetalheViewController.instanciar(viagemSelecionada)
             navigationController?.pushViewController(detalheController, animated: true)
@@ -43,7 +43,7 @@ extension ViewController: UITableViewDataSource {
         case .destaques, .internacionais:
             let viagemSelecionada = viewModel?.viagens[indexPath.row]
             
-            irParaDesaques(viagemSelecionada)
+            irParaDetalhes(viagemSelecionada)
         default:
             break
         }
@@ -72,6 +72,7 @@ extension ViewController: UITableViewDataSource {
         case .ofertas:
             guard let celulaOferta = tableView.dequeueReusableCell(withIdentifier: "OfertaTableViewCell") as? OfertaTableViewCell else { fatalError("Error to create ViagemTableViewCell") }
             
+            celulaOferta.delegate = self
             celulaOferta.configuraCelula(viewModel?.viagens)
             return celulaOferta
             
@@ -103,4 +104,10 @@ extension ViewController: UITableViewDelegate {
         return UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone ? 410 : 485
     }
     
+}
+
+extension ViewController: OfertaTableViewCellDelegate {
+    func didSelectView(_ viagem: Viagem?) {
+        irParaDetalhes(viagem)
+    }
 }
