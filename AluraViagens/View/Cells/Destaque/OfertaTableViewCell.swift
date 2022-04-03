@@ -17,7 +17,11 @@ class OfertaTableViewCell: UITableViewCell {
     @IBOutlet var precoLabels: [UILabel]!
     @IBOutlet var fundoViews: [UIView]!
     
+    private var viagens: [Viagem]?
+    
     func configuraCelula(_ viagens: [Viagem]?) {
+        
+        self.viagens = viagens
         
         guard let listViagens = viagens else { return }
         
@@ -26,6 +30,7 @@ class OfertaTableViewCell: UITableViewCell {
         }
         
         fundoViews.forEach { viewAtual in
+            viewAtual.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didSelectView(_ :))))
             viewAtual.addSombra()
         }
     }
@@ -45,6 +50,14 @@ class OfertaTableViewCell: UITableViewCell {
         
         let precoOutlet = precoLabels[index]
         precoOutlet.text = "R$ \(viagem.preco)"
+    }
+    
+    @objc func didSelectView(_ gesture: UIGestureRecognizer) {
+        if let selectedView = gesture.view {
+            let viagemSelecionada = viagens?[selectedView.tag]
+            
+            print(viagemSelecionada?.titulo)
+        }
     }
     
 }
